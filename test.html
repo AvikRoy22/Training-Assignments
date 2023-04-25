@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function time()
+        {
+            var d=new Date();
+            var val = d.getHours() + " : " + d.getMinutes() + " : " + d.getSeconds();
+            document.frmt.timet.value=val;
+            setInterval("Time",1000);
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time disp</title>
+</head>
+<body onload="time()">
+    <center>
+        <h2>Dispaly the current time</h2>
+        <form name="frmt">
+            <input type="text" name="timet" size="20">
+        </form>
+    </center>
+    
+</body>
+</html>

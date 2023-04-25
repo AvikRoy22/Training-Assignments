@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Parallax Website</title>
+<style>
+ body {
+margin: 0;
+ padding: 0;
+font-family: Arial, sans-serif,;
+ }
+section {
+height: 100vh;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.section1 {
+background-image: url(https://images.wallpapersden.com/image/download/kakashi-hatake-x-sharingan-hd-naruto-digital-art_bWxrameUmZqaraWkpJRnZmltrWZqZW0.jpg);
+background-attachment: fixed;
+color: #121212;
+font-style: italic;
+}
+.section2 {
+background-image: url(https://images.wallpapersden.com/image/download/4k-kyojuro-rengoku-ultra_bGluaWeUmZqaraWkpJRmbmdlrWZlbWU.jpg);
+background-attachment: fixed;
+color: #1fb314;
+font-style:unset;
+}
+.section3 {
+background-image: url(https://i0.wp.com/ramenswag.com/wp-content/uploads/2018/05/Itachi-uchiha-wallpaper-4k.jpg?resize=1060%2C663&ssl=1);
+background-attachment: fixed;
+color: #ffffff;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-style: initial;
+}
+p {
+font-size: 4em;
+text-shadow: 2px 2px #000;
+}
+.parallax {
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+position: relative;
+
+}
+.parallax::after {
+content: "";
+background: rgba(0,0,0,0.5);
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+}
+.parallax h2 {
+color: #e4ed6e;
+font-size: 3em;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-shadow: 2px 2px #000;
+z-index: 1;
+}
+</style>
+</head>
+<body>
+<section class="section1">
+<p>The Man with Zero haters</p>
+</section>
+<section class="section2">
+<p>Set your Heart ablaze</p>
+</section>
+<section class="section3">
+<p>The Clan Killer</p>
+</section>
+<div class="parallax" style="background-image: url(https://wallpapers.com/images/hd/ultrawide-4k-y3c9sgub44mnsthf.jpg)">
+    <h2>Its Time for the thunder GOD to appear</h2>
+</div>
+</body>
+</html>
